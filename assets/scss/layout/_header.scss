@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0px;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.headerList {
+  display: flex;
+  align-items: center;
+}
+
+.headerList a {
+  display: block;
+  color: #212529;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.headerList a:hover {
+  color: #6C757D;
+  border-color: #6C757D;
+}
+
+.headerList .logo:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.logo {
+  margin-right: 48px;
+}
+
+.logo img {
+  display: block;
+}
+
+.memberBtn {
+  padding: 15px;
+}
+
+/*響應式*/
+@media(max-width:375px) {
+  .header {
+    padding: 9px 12px;
+  }
+
+  .headerList a:not(.logo) {
+    display: none;
+  }
+
+  .memberBtn img{
+    width: 18px;
+    height: 18px;
+  }
+}

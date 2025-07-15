@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+  <div class="container">
+    <%- include('./layout/header'); -%>
+      <main>
+        <nav class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li><a href="index.html" class="pageActive">首頁</a></li>
+            <li class="px-12 pageActive">/</li>
+            <li><a href="#" class="pageActive">女鞋</a></li>
+            <li class="px-12 pageActive">/</li>
+            <li><a href="#">所有商品</a></li>
+          </ol>
+        </nav>
+        <div class="mb-24">
+          <h1 class="h1 mb-24">女鞋</h1>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <ul>
+              <li class="mb-20"><a href="#" class="menu-list allProduct">所有商品</a></li>
+              <li class="mb-20"><a href="#" class="menu-list">慢跑鞋</a></li>
+              <li class="mb-20"><a href="#" class="menu-list">滑板鞋</a></li>
+              <li class="mb-20"><a href="#" class="menu-list">厚底鞋</a></li>
+              <li class="mb-20"><a href="#" class="menu-list">限定 / 聯名企劃</a></li>
+            </ul>
+          </div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="productDetail.html"><img src="/assets/images/product.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>PLATFORM 404</h6>
+                  <p>NT$2,600</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"><img src="/assets/images/product-1.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>PLATFORM 404</h6>
+                  <p>NT$2,600</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"> <img src="/assets/images/product-2.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>VM001</h6>
+                  <p>NT$2,600</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"><img src="/assets/images/product-3.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>Melty Kiss</h6>
+                  <p>NT$4,000</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"><img src="/assets/images/product-4.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>BOOMBLOK</h6>
+                  <p>NT$3,200</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"><img src="/assets/images/product-5.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>BOOMBLOK</h6>
+                  <p>NT$4,000</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"><img src="/assets/images/product-6.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>R:UNER</h6>
+                  <p>NT$4,000</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"><img src="/assets/images/product-7.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>Sugar Snap</h6>
+                  <p>NT$4,000</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card px-12 mb-48">
+                  <a href="#"><img src="/assets/images/product-8.png" class="card-img mb-12" alt="shoes"></a>
+                  <h6>Neofoam</h6>
+                  <p>NT$4,000</p>
+                </div>
+              </div>
+              <ul class="page mb-32">
+                <li><a href="#" class="page-item"><i class="bi bi-chevron-left"></i></a></li>
+                <li><a href="#" class="page-item">1</a></li>
+                <li><a href="#" class="page-item">2</a></li>
+                <li><a href="#" class="page-item">3</a></li>
+                <li><a href="#" class="page-item">...</a></li>
+                <li><a href="#" class="page-item">10</a></li>
+                <li><a href="#" class="page-item"><i class="bi bi-chevron-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+  </div>
+  
+  <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

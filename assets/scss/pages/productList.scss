@@ -1,0 +1,81 @@
+.breadcrumb {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.breadcrumb-list {
+  display: flex;
+
+}
+
+.breadcrumb-list li a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.breadcrumb-list .pageActive {
+  color: #6C757D;
+}
+
+.h1 {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.menu-list {
+  display: block;
+  padding: 8px 0px;
+  text-decoration: none;
+  color: #212529;
+}
+
+.menu-list:hover {
+  color: #6C757D;
+}
+
+.allProduct {
+  color: #57A203;
+}
+
+.card{
+  overflow: visible;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+
+.card a:hover .card-img {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .25);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.page {
+  display: flex;
+  margin: 0 auto;
+}
+
+.page-item {
+  color: #212529;
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+}
+
+.page-item:hover,
+.page-item:focus {
+  background: #f5f5f5;
+}
+
