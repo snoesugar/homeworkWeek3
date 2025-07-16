@@ -78,8 +78,12 @@
   background: #f5f5f5;
 }
 
+.page-active {
+  background-color: #C0FA73;
+}
+
 /*響應式*/
-@media(max-width:375px) {
+@media(max-width:768px) {
 
   /*productList*/
   .col-2 {
@@ -105,27 +109,49 @@
   }
 
   .current-page.mb-24 {
-    margin-bottom: 12px;
+    margin-bottom: 0px;
   }
 
-  .row .col-10{
+  .row .col-10 {
     width: 100%;
   }
 
+  /* 1. 取消原本 .row 的負 margin，改用 gap */
   .col-10 .row {
     justify-content: space-between;
+    margin: 0px;
+    /* 先移除 -12px */
+    gap: 12px; 
+    /* 橫向＋縱向都 12px */
   }
 
+  /* 2. 調整欄寬：50% - 6px → 才能留出 gap */
   .col-10 .col-4 {
-    width: 50%;
+    flex: 0 0 calc(50% - 6px);
+    /* (100/2) - (gap/2) */
+    padding: 0px;
+    /* 內距交給卡片自己決定 */
+  }
+
+  /* 3. 卡片本身的上下左右間距 */
+  .card {
+    padding: 12px;
+    /* 內距 */
   }
 
   .card.px-12.mb-48 {
     padding: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
-  .card-img.mb-12{
+  .card-img.mb-12 {
     margin-bottom: 8px;
+  }
+  .col-4.d-none{
+    display: block;
+  }
+  
+  .page.mb-32{
+    margin-bottom: 0px;
   }
 }

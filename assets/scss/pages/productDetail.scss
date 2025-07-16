@@ -1,5 +1,6 @@
 .product-content {
     display: flex;
+    justify-content: space-between;
     padding: 64px 0px;
 }
 
@@ -10,7 +11,7 @@
 }
 
 .product-img {
-    max-width: 369px;
+    width: 369px;
 }
 
 .product-img img {
@@ -45,6 +46,7 @@
     font-size: 14px;
     font-weight: 400;
     color: #ADB5BD;
+    text-decoration: line-through;
 }
 
 .product-right p {
@@ -61,15 +63,15 @@
     color: #6C757D;
 }
 
-.color img{
+.color img {
     display: block;
     width: 64px;
     height: 64px;
     border: 1px solid transparent;
 }
 
-.color a:hover img, 
-.color a:focus img{
+.color a:hover img,
+.color a:focus img {
     border-color: #212529;
 }
 
@@ -119,7 +121,9 @@
     border: 1px solid #212529;
     border-radius: 4px;
     color: #212529;
-    text-decoration: none;
+    background-color: white;
+    font-size: 16PX;
+    cursor: pointer;
 }
 
 .favorite {
@@ -153,4 +157,96 @@
 
 .like-list {
     display: flex;
+}
+
+/*productDetail*/
+@media(max-width:768px) {
+    .container.p-0 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .product-content {
+        padding: 0px;
+    }
+
+    .product-content .col-5 {
+        width: 100%;
+    }
+
+    .rwd-none {
+        display: none;
+    }
+
+    .product-img.d-none {
+        display: block;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .breadcrumb-list.mb-12 {
+        margin-bottom: 8px;
+    }
+
+    .breadcrumb-list li a {
+        font-size: 14px;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .product-title.mb-16 {
+        margin-bottom: 12px;
+    }
+
+    .sale {
+        font-size: 16px;
+    }
+
+    .color.mb-32 {
+        margin-bottom: 24px;
+    }
+
+    .sizeBtn {
+        padding: 11px 32px;
+    }
+
+    .remaining.mb-48 {
+        margin-bottom: 24px;
+    }
+
+    .fitting {
+        padding: 12px 83.5px;
+        margin-right: 8px;
+    }
+
+    .buying .d-none {
+        display: block;
+        border: 0px;
+        padding: 0px;
+    }
+
+    .b-heart {
+        display: block;
+        font-size: 20px;
+        padding: 9px 12px;
+    }
+
+    .btnBheart{
+        background-color: white;
+    }
+
+    .maylike-text {
+        font-size: 20px;
+        padding: 8px 0px;
+    }
+
+    .maylike-text.mt-48 {
+        margin-top: 40px;
+    }
+
+    .maylike.d-none {
+        display: block;
+    }
 }
