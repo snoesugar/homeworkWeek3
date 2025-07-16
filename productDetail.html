@@ -5,14 +5,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>contact</title>
-  <script type="module" crossorigin src="/homeworkWeek3/assets/main-BSJKWxt2.js"></script>
-  <link rel="stylesheet" crossorigin href="/homeworkWeek3/assets/main-BhvquuWj.css">
+  <title>產品詳情頁</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/homeworkWeek3/assets/main-CFXIKgj8.js"></script>
+  <link rel="stylesheet" crossorigin href="/homeworkWeek3/assets/main-CF7rRYvo.css">
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
+  <header class="header">
     <div class="headerList">
         <a href="index.html" class="logo"><img src="/homeworkWeek3/assets/logo-RhEl2I3y.svg" alt="logo"></a>
         <a href="productList.html" class="py-12 mr-40">商品列表</a>
@@ -21,8 +22,12 @@
     <div class="memberBtn">
         <a href="#"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%208a3%203%200%201%200%200-6%203%203%200%200%200%200%206m2-3a2%202%200%201%201-4%200%202%202%200%200%201%204%200m4%208c0%201-1%201-1%201H3s-1%200-1-1%201-4%206-4%206%203%206%204m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516%2010.68%2010.289%2010%208%2010s-3.516.68-4.168%201.332c-.678.678-.83%201.418-.832%201.664z'/%3e%3c/svg%3e" alt="member"></i></a>
     </div>
-</header>      <div class="product-content">
-        <div class="col-7">
+</header>    <div class="product-img d-none">
+      <img src="/homeworkWeek3/assets/image-gISZDASy.png" alt="shoes">
+    </div>
+    <div class="container p-0">
+      <div class="product-content">
+        <div class="col-7 p-0 mr-16 rwd-none">
           <div class="product">
             <div class="product-img">
               <img src="/homeworkWeek3/assets/image-gISZDASy.png" alt="shoes">
@@ -50,26 +55,24 @@
             </div>
           </div>
         </div>
-        <div class="col-5 pl-16">
+        <div class="col-5 p-0">
           <div class="product-right">
-            <nav class="mb-12">
-              <ol class="breadcrumb-list">
-                <li><a href="index.html" class="pageActive">首頁</a></li>
-                <li class="px-12 pageActive">/</li>
-                <li><a href="#" class="pageActive">女鞋</a></li>
-                <li class="px-12 pageActive">/</li>
-                <li><a href="#" class="pageActive">滑板車</a></li>
-                <li class="px-12 pageActive">/</li>
-                <li><a href="#">Platform 404</a></li>
-              </ol>
-            </nav>
+            <ol class="breadcrumb-list mb-12">
+              <li><a href="index.html" class="pageActive">首頁</a></li>
+              <li class="px-12 pageActive">/</li>
+              <li><a href="#" class="pageActive">女鞋</a></li>
+              <li class="px-12 pageActive">/</li>
+              <li><a href="#" class="pageActive">滑板車</a></li>
+              <li class="px-12 pageActive">/</li>
+              <li><a href="#">Platform 404</a></li>
+            </ol>
             <div class="mb-32">
               <h1 class="product-title mb-16">
                 Platform 404
               </h1>
               <div class="price mb-16">
                 <span class="sale mr-8">NT$2,600</span>
-                <span class="original"><del>NT$3,200</del></span>
+                <span class="original">NT$3,200</span>
               </div>
               <p class="mb-12">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
               <p>鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
@@ -101,8 +104,9 @@
             </div>
             <p class="remaining mb-48">僅剩3雙</p>
             <div class="buying mb-32">
-              <a href="#" class="buyBtn favorite mr-8"><i class="bi bi-heart"></i>加入收藏</a>
-              <a href="#" class="buyBtn fitting"><i class="bi bi-handbag"></i>門市預約試穿</a>
+              <button type="button" class="buyBtn favorite mr-8 rwd-none"><i class="bi bi-heart mr-8"></i>加入收藏</button>
+              <button type="button" class="buyBtn fitting"><i class="bi bi-handbag mr-8"></i>門市預約試穿</button>
+              <button type="button" class="d-none btnBheart"><i class="bi bi-heart b-heart"></i></button>
             </div>
             <div class="production">
               <div class="production-item">
@@ -134,7 +138,7 @@
           </div>
         </div>
       </div>
-      <section class="maylike">
+      <section class="maylike rwd-none">
         <h4 class="maylike-text mt-48 mb-16">你可能也喜歡...</h4>
         <div class="like-list">
           <div class="card px-12 mb-48">
@@ -159,9 +163,37 @@
           </div>
         </div>
       </section>
-  </div>
+      <section class="maylike d-none">
+        <h4 class="maylike-text mt-48 mb-16">你可能也喜歡...</h4>
+        <div class="swiper like-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card px-12 mb-48">
+              <a href="#"> <img src="/homeworkWeek3/assets/product-2-B3VzoAng.png" class="card-img mb-12" alt="shoes"></a>
+              <h6>VM001</h6>
+              <p>NT$2,600</p>
+            </div>
+            <div class="swiper-slide card px-12 mb-48">
+              <a href="#"><img src="/homeworkWeek3/assets/product-3-AxvEbKOW.png" class="card-img mb-12" alt="shoes"></a>
+              <h6>Melty Kiss</h6>
+              <p>NT$4,000</p>
+            </div>
+            <div class="swiper-slide card px-12 mb-48">
+              <a href="#"><img src="/homeworkWeek3/assets/product-4-CqyUCYzf.png" class="card-img mb-12" alt="shoes"></a>
+              <h6>BOOMBLOK</h6>
+              <p>NT$3,200</p>
+            </div>
+            <div class="swiper-slide card px-12 mb-48">
+              <a href="#"><img src="/homeworkWeek3/assets/product-5-Crvwip2z.png" class="card-img mb-12" alt="shoes"></a>
+              <h6>BOOMBLOK</h6>
+              <p>NT$4,000</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </div>
 
-   <div class="member">
+     <div class="member">
         <span>加入會員取得9折優惠</span>
         <a href="#" class="btn">馬上註冊</a>
     </div>
@@ -175,7 +207,7 @@
         <p class="mb-4">Copyright ©2025 URBNSTYLE</p>
         <p>All Rights Reserved.</p>
     </div>
-</footer>    
+</footer>      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
