@@ -3,22 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 152px 0;
     text-align: center;
-}
-
-.story-title h1 {
-    color: white;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.story-title span {
-    color: white;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.2;
 }
 
 .story-content {
@@ -28,17 +13,11 @@
 
 .slogan {
     width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    background: #f5fee7;
+    background: $primary-color-100;
     padding: 32px;
-}
-
-.slogan-title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #57A203;
 }
 
 .shoes img {
@@ -56,30 +35,13 @@
     padding-right: 12px;
 }
 
-.slogan p,
-.introduction p,
-.history li,
-.concept li {
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .border-gray {
-    border-bottom: 1px solid #DEE2E6;
-    padding-bottom: 48px;
-}
-
-.introduction-title {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 24px 0px;
+    border-bottom: 1px solid $text-color-300;
 }
 
 .history li {
     list-style: disc;
     list-style-position: inside;
-    margin-bottom: 12px;
 }
 
 .space {
@@ -87,27 +49,16 @@
 }
 
 .concept-item {
-    border-left: 3px solid #DEE2E6;
-    padding-left: 12px;
-    margin-bottom: 12px;
+    border-left: 3px solid $text-color-300;
 }
 
 .short-story li a {
-    color: #57A203;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 1px solid #57A203;
-}
-
-.short-story span {
-    color: #57A203;
-    margin-right: 8px;
+    border-bottom: 1px solid $primary-color-400;
 }
 
 .short-story a:hover {
-    color: #386900;
-    border-bottom: 1px solid #386900;
+    color: $primary-color-500;
+    border-bottom: 1px solid $primary-color-500;
 }
 
 

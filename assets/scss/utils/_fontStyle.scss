@@ -1,0 +1,133 @@
+body {
+  color: $text-color-900;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
+/*footer*/
+.member span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.footer {
+  background-color: $text-color-100;
+}
+
+.copyRight {
+  color: $text-color-600;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*index*/
+
+/*productList*/
+.current-page {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.card h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+/*productDetail*/
+.product-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sale {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primary-color-400;
+}
+
+.original {
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-color-500;
+  text-decoration: line-through;
+}
+
+.product-right p {
+  font-weight: 400;
+}
+
+.color-list p {
+  color: $text-color-600;
+}
+
+.remaining {
+  font-size: 14px;
+  font-weight: 400;
+  color: $danger-color-300;
+}
+
+.production-item ul li {
+  font-weight: 400;
+  color: $text-color-600;
+}
+
+.maylike-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/*story*/
+.story-title h1 {
+  color: $text-color-000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.story-title span {
+  color: $text-color-000;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.slogan-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primary-color-400;
+}
+
+.slogan p,
+.introduction p,
+.history li,
+.concept li {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.introduction-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.short-story li a {
+  color: $primary-color-400;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.short-story span {
+  color: $primary-color-400;
+}

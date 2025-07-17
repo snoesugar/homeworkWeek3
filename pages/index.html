@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="banner mb-64">
+            <h2 class="banner-title mb-16">URBNSTEP</h2>
+            <p class="banner-text mb-48">Your Step, Your Statement</p>
+            <a href="#" class="bannerBtn">立即選購</a>
+        </div>
+        <div class="container">
+            <div class="newArrival">
+                <h3 class="newArrival-title mb-12">New Arrival</h3>
+                <p class="newArrival-text mb-32">新品上市</p>
+            </div>
+            <div class="newArrival-list">
+                <div class="newArrival-item mb-16">
+                    <img src="/assets/images/new-1.png" class="mb-12" alt="new-1">
+                    <h4 class="new-title mb-4">Monoverse</h4>
+                    <p>NT$3,600</p>
+                </div>
+                <div class="newArrival-item mb-16">
+                    <img src="/assets/images/new-2.png" class="mb-12" alt="new-1">
+                    <h4 class="new-title mb-4">PLATFORM 404</h4>
+                    <p>NT$3,600</p>
+                </div>
+                <div class="newArrival-item mb-16">
+                    <img src="/assets/images/new-3.png" class="mb-12" alt="new-1">
+                    <h4 class="new-title mb-4">URBN Force</h4>
+                    <p>NT$3,200</p>
+                </div>
+                <div class="newArrival-item mb-16">
+                    <img src="/assets/images/new-4.png" class="mb-12" alt="new-1">
+                    <h4 class="new-title mb-4">Mode90</h4>
+                    <p>NT$4,000</p>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

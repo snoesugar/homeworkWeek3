@@ -1,44 +1,22 @@
-.breadcrumb {
-  margin-top: 32px;
-  margin-bottom: 24px;
-}
-
-.breadcrumb-list {
-  display: flex;
-}
-
-.breadcrumb-list li a {
-  text-decoration: none;
-  color: #212529;
-}
-
-.breadcrumb-list .pageActive {
-  color: #6C757D;
-}
-
-.current-page {
-  font-size: 28px;
-  line-height: 1.2;
-  font-weight: 700;
-}
-
 .menu-list {
   display: block;
   padding: 8px 0px;
   text-decoration: none;
-  color: #212529;
+  color: $text-color-900;
 }
 
 .menu-list:hover {
-  color: #6C757D;
+  color: $primary-color-400;
 }
 
-.allProduct {
-  color: #57A203;
+.active {
+  color: $primary-color-400;
 }
 
 .card {
   overflow: visible;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .card-img {
@@ -51,14 +29,13 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, .25);
 }
 
-.card img {
-  width: 100%;
+.card a {
+  text-decoration: none;
+  color:$text-color-900;
 }
 
-.card h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 4px;
+.card img {
+  width: 100%;
 }
 
 .page {
@@ -67,7 +44,7 @@
 }
 
 .page-item {
-  color: #212529;
+  color: $text-color-900;
   text-decoration: none;
   display: block;
   padding: 8px 15px;
@@ -75,11 +52,11 @@
 
 .page-item:hover,
 .page-item:focus {
-  background: #f5f5f5;
+  background: $primary-color-100;
 }
 
 .page-active {
-  background-color: #C0FA73;
+  background-color: $primary-color-300;
 }
 
 /*響應式*/
@@ -133,14 +110,7 @@
     /* 內距交給卡片自己決定 */
   }
 
-  /* 3. 卡片本身的上下左右間距 */
-  .card {
-    padding: 12px;
-    /* 內距 */
-  }
-
   .card.px-12.mb-48 {
-    padding: 0px;
     margin-bottom: 12px;
   }
 

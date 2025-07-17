@@ -1,0 +1,57 @@
+.banner {
+    background-image: url(/assets/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 289px 0px 288px 200px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner-title {
+    font-size: 64px;
+}
+
+.banner-text {
+    font-size: 28px;
+}
+
+.bannerBtn {
+    display: inline-block;
+    color: #212529;
+    padding: 12px 24px;
+    background-color: #C0FA73;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.newArrival {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.newArrival-title {
+    font-size: 48px;
+}
+
+.newArrival-text {
+    font-size: 32px;
+}
+.newArrival-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.newArrival-item img{
+    width: 636px;
+}
+
+.new-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}

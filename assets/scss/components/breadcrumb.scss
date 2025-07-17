@@ -1,0 +1,34 @@
+.breadcrumb {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.breadcrumb-list {
+  display: flex;
+}
+
+.breadcrumb-list li {
+  position: relative;
+  padding: 0px 16px 0px 8px;
+}
+
+.breadcrumb-list li::before {
+  content: "/";
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  color: $text-color-600; /* 分隔線顏色 */
+}
+
+.breadcrumb-list li:first-child::before {
+  content: none;
+}
+
+.breadcrumb-list li a {
+  text-decoration: none;
+  color: $text-color-900;
+}
+
+.breadcrumb-list .pageActive {
+  color: $text-color-600;
+}

@@ -1,73 +1,44 @@
 .member {
   display: flex;
-  background: #E8FEC5;
+  background: $primary-color-200;
   justify-content: center;
   align-items: center;
   padding: 24px 0px;
-  margin-top: 40px;
-}
-
-.member span {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-right: 24px;
 }
 
 .btn {
   display: inline-block;
-  color: white;
+  color: $text-color-000;
   text-decoration: none;
-  background-color: #212529;
+  background-color: $text-color-900;
   padding: 12px 24px;
   border-radius: 4px;
 }
 
 .btn:hover {
-  background-color: #1e40af;
-}
-
-.footer {
-  background-color: #F8F9FA;
-  padding: 64px 0px;
+  background-color: $text-color-800;
 }
 
 .footerList {
-  max-width: 1296px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-bottom: 24px;
   border-bottom: 1px solid #DEE2E6;
 }
 
 .footerList a {
   display: block;
-  color: #212529;
+  color: $text-color-900;
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
 
 .footerList a:hover {
-  color: #6C757D;
-  border-color: #6C757D;
+  color: $primary-color-400;
+  border-color: $primary-color-400;
 }
 
 .footerList .logo:hover {
   border-bottom: 1px solid transparent;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
-.copyRight {
-  color: #6C757D;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 32px;
-
 }
 
 /*響應式*/
