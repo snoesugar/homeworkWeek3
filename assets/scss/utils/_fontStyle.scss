@@ -25,6 +25,92 @@ body {
 }
 
 /*index*/
+.banner {
+  color: $text-color-000;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.banner-title {
+  font-size: 64px;
+}
+
+.banner-text {
+  font-size: 28px;
+}
+
+.newArrival {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.newArrival-title {
+  font-size: 48px;
+}
+
+.newArrival-text {
+  font-size: 32px;
+}
+
+.new-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hot-sale {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.number-1 {
+  font-size: 14px;
+  color: $primary-color-400;
+  background-color: $primary-color-100;
+}
+
+.banner-co-branded h5 {
+  color: $text-color-000;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.banner-x.mx-24 {
+  color: $primary-color-300;
+}
+
+.banner-co-branded-text {
+  color: $text-color-000;
+  font-size: 32px;
+  text-align: center;
+}
+
+.banner-co-branded-text-s {
+  color: $text-color-500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.shop-series {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.shop-series-text-title {
+  font-size: 28px;
+}
+
+.shop-series-text .shop-series-text-s {
+  font-size: 20px;
+}
+
+.outfit-content {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 
 /*productList*/
 .current-page {

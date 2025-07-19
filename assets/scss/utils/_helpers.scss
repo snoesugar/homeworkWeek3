@@ -8,11 +8,15 @@
 }
 
 .p-0 {
-    padding: 0px;
+    padding: 0px !important;
 }
 
-.pt-32{
+.pt-32 {
     padding-top: 32px;
+}
+
+.pt-100 {
+    padding-top: 100px;
 }
 
 .py-12 {
@@ -21,6 +25,10 @@
 
 .py-17 {
     padding: 17px 0px;
+}
+
+.py-48 {
+    padding: 48px 0px;
 }
 
 .py-64 {
@@ -43,8 +51,20 @@
     padding-bottom: 48px;
 }
 
+.pb-72 {
+    padding-bottom: 72px;
+}
+
 /*margin*/
-.my-24{
+.m-0 {
+    margin: 0px !important;
+}
+
+.mx-24 {
+    margin: 0px 24px;
+}
+
+.my-24 {
     margin: 24px 0px;
 }
 
@@ -64,12 +84,20 @@
     margin-top: 64px;
 }
 
+.ml-12 {
+    margin-left: 12px;
+}
+
 .mr-auto {
     margin-right: auto;
 }
 
 .mr-8 {
     margin-right: 8px;
+}
+
+.mr-12 {
+    margin-right: 12px;
 }
 
 .mr-16 {
@@ -108,6 +136,10 @@
     margin-bottom: 20px;
 }
 
+.mb-21 {
+    margin-bottom: 21px;
+}
+
 .mb-24 {
     margin-bottom: 24px;
 }
@@ -124,6 +156,16 @@
     margin-bottom: 64px;
 }
 
+/*display*/
 .d-none {
     display: none;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.g-8 {
+    gap: 8px;
 }
