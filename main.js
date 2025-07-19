@@ -34,34 +34,3 @@ btnBheart.addEventListener("click", () => {
   }
 });
 
-//輪播系統(問GTP的JS寫法>_<")
-let likeSwiper;          // 存目前的 Swiper 實例
-
-function mountOrDestroySwiper() {
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-  if (isMobile && !likeSwiper) {
-    // 1) 手機 & 尚未建立 ⇒ 建立
-    likeSwiper = new Swiper('.like-list.swiper', {
-      slidesPerView: 1.2,
-      spaceBetween: 16,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        576: { slidesPerView: 1.6 },
-        768: { slidesPerView: 2.2 },
-      },
-    });
-  } else if (!isMobile && likeSwiper) {
-    // 2) 回到桌機 & 之前有實例 ⇒ 銷毀
-    likeSwiper.destroy(true, true);
-    likeSwiper = undefined;
-  }
-}
-
-/* 監聽載入與視窗尺寸改變 */
-window.addEventListener('load', mountOrDestroySwiper);
-window.addEventListener('resize', mountOrDestroySwiper);

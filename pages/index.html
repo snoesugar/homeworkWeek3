@@ -6,10 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首頁</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
     <%- include('./layout/header'); -%>
+        <div class="d-none">
+            <div class="index-btn">
+                <a href="productList.html" class="index-btn-1">商品列表</a>
+                <a href="story.html" class="index-btn-2">品牌故事</a>
+            </div>
+        </div>
         <div class="banner mb-64">
             <h2 class="banner-title mb-16">URBNSTEP</h2>
             <p class="banner-text mb-48">Your Step, Your Statement</p>
@@ -42,7 +49,46 @@
                     <p>NT$4,000</p>
                 </div>
             </div>
-            <div class="hot-sale">
+            <div class="hot-sale d-none">
+                <h4 class="mb-21">熱銷補貨</h4>
+                <div class="swiper row mb-64">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/assets/images/product-3.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/assets/images/product.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/assets/images/product-6.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/assets/images/product-4.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hot-sale rwd-none">
                 <h4 class="mb-21">熱銷補貨</h4>
                 <div class="row mb-64">
                     <div class="col-3 hotsale-img">
@@ -146,7 +192,7 @@
                 <div class="outfit-content">
                     <h4 class="mt-64 mb-16">穿搭靈感</h4>
                 </div>
-                <div class="outfit-list">
+                <div class="outfit-list rwd-none">
                     <div class="outfit-row g-8">
                         <div class="outfit-4 g-8">
                             <div class="d-flex g-8">
@@ -204,12 +250,56 @@
                         </div>
                     </div>
                 </div>
+                <!--RWD輪播穿搭系統-->
+                <div class="d-none">
+                    <div class="outfit-list swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-1.png" class="outfit-img" alt="inspiration-1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-2.png" class="outfit-img" alt="inspiration-2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-3.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-4.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-5.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-6.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-7.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-8.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-9.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-10.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-11.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/images/inspiration-12.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <%- include('./layout/footer'); -%>
-
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             <script type="module" src="../main.js"></script>
+             
 </body>
 
 </html>
