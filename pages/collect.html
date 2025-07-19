@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>收藏頁</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container d-flex">
+            <div class="col-6 mb-64">
+                <h1 class="collect-title mb-32">
+                    <i class="bi bi-check-lg check"></i>
+                    我的收藏
+                </h1>
+                <h2 class="collect-time">
+                    <i class="bi bi-truck truck"></i>
+                    門市營業時間：週一至週五 10:00 - 22:00
+                </h2>
+                <div class="collect-list">
+                    <div class="collect-item mt-32">
+                        <div class="collect-img pr-16 pb-32">
+                            <img src="/assets/images/image.png" alt="shoes">
+                        </div>
+                        <div class="collect-item-content">
+                            <h3>PLATFORM 404</h3>
+                            <span class="mr-12 pb-8">尺寸</span>
+                            <span>38</span>
+                            <br>
+                            <span class="mr-12 pb-8">顏色</span>
+                            <span>Navy</span>
+                            <span class="collect-price">NT$2,600</span>
+                        </div>
+                    </div>
+                    <div class="collect-item mt-32">
+                        <div class="collect-img pr-16 pb-32">
+                            <img src="/assets/images/product-4.png" alt="shoes">
+                        </div>
+                        <div class="collect-item-content">
+                            <h3>BOOMLOK</h3>
+                            <span class="mr-12 pb-8">尺寸</span>
+                            <span>38</span>
+                            <br>
+                            <span class="mr-12 pb-8">顏色</span>
+                            <span>White</span>
+                            <span class="collect-price">NT$3,200</span>
+                        </div>
+                    </div>
+                    <div class="collect-item mt-32">
+                        <div class="collect-img pr-16 pb-32">
+                            <img src="/assets/images/product-3.png" alt="shoes">
+                        </div>
+                        <div class="collect-item-content">
+                            <h3>MELTY KISS</h3>
+                            <span class="mr-12 pb-8">尺寸</span>
+                            <span>38</span>
+                            <br>
+                            <span class="mr-12 pb-8">顏色</span>
+                            <span>Violet</span>
+                            <span class="collect-price">NT$4,000</span>
+                        </div>
+                    </div>
+                    <a href="#" class="collect-btn mt-32">立即預約門市試穿</a>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footerNo'); -%>
+            <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>

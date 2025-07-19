@@ -217,3 +217,43 @@ body {
 .short-story span {
   color: $primary-color-400;
 }
+
+/*collect*/
+.collect-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.collect-time {
+  color: $primary-color-400;
+  background-color: $primary-color-100;
+}
+
+.check {
+  font-size: 25px;
+  color: $primary-color-500;
+  background-color: $primary-color-300;
+  width: 16.5px;
+  height: 12.75px;
+  padding: 1px 5px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.truck {
+  font-size: 24px;
+  padding-right: 12px;
+}
+
+.collect-item {
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  span {
+    color: $text-color-600;
+  }
+}

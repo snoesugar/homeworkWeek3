@@ -33,4 +33,3 @@ btnBheart.addEventListener("click", () => {
     btnBheart.innerHTML = '<i class="bi bi-heart b-heart"></i>';
   }
 });
-
