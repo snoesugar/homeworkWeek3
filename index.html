@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首頁</title>
-  <script type="module" crossorigin src="/homeworkWeek3/assets/main-D1YjR4jq.js"></script>
-  <link rel="stylesheet" crossorigin href="/homeworkWeek3/assets/main-DPsC72JH.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script type="module" crossorigin src="/homeworkWeek3/assets/main-jVNXAcAK.js"></script>
+  <link rel="stylesheet" crossorigin href="/homeworkWeek3/assets/main-CDhi58JO.css">
 </head>
 
 <body>
@@ -20,7 +21,13 @@
     <div class="memberBtn">
         <a href="#"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%208a3%203%200%201%200%200-6%203%203%200%200%200%200%206m2-3a2%202%200%201%201-4%200%202%202%200%200%201%204%200m4%208c0%201-1%201-1%201H3s-1%200-1-1%201-4%206-4%206%203%206%204m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516%2010.68%2010.289%2010%208%2010s-3.516.68-4.168%201.332c-.678.678-.83%201.418-.832%201.664z'/%3e%3c/svg%3e" alt="member"></i></a>
     </div>
-</header>        <div class="banner mb-64">
+</header>        <div class="d-none">
+            <div class="index-btn">
+                <a href="productList.html" class="index-btn-1">商品列表</a>
+                <a href="story.html" class="index-btn-2">品牌故事</a>
+            </div>
+        </div>
+        <div class="banner mb-64">
             <h2 class="banner-title mb-16">URBNSTEP</h2>
             <p class="banner-text mb-48">Your Step, Your Statement</p>
             <a href="#" class="bannerBtn">立即選購</a>
@@ -52,7 +59,46 @@
                     <p>NT$4,000</p>
                 </div>
             </div>
-            <div class="hot-sale">
+            <div class="hot-sale d-none">
+                <h4 class="mb-21">熱銷補貨</h4>
+                <div class="swiper row mb-64">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/homeworkWeek3/assets/product-3-AxvEbKOW.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/homeworkWeek3/assets/product-ByIiOSCa.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/homeworkWeek3/assets/product-6-D5PaxBWx.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-3 hotsale-img">
+                                <a href="#">
+                                    <img src="/homeworkWeek3/assets/product-4-CqyUCYzf.png" alt="shoes">
+                                    <div class="number-1">人氣 No.1</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hot-sale rwd-none">
                 <h4 class="mb-21">熱銷補貨</h4>
                 <div class="row mb-64">
                     <div class="col-3 hotsale-img">
@@ -156,7 +202,7 @@
                 <div class="outfit-content">
                     <h4 class="mt-64 mb-16">穿搭靈感</h4>
                 </div>
-                <div class="outfit-list">
+                <div class="outfit-list rwd-none">
                     <div class="outfit-row g-8">
                         <div class="outfit-4 g-8">
                             <div class="d-flex g-8">
@@ -214,6 +260,49 @@
                         </div>
                     </div>
                 </div>
+                <!--RWD輪播穿搭系統-->
+                <div class="d-none">
+                    <div class="outfit-list swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-1-DfKNOocz.png" class="outfit-img" alt="inspiration-1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-2-BDjDmVQx.png" class="outfit-img" alt="inspiration-2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-3-DIOw8vX3.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-4-CXnBlVsw.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-5-DqqQzPWa.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-6-Dk9lgMEe.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-7-ImmAd34h.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-8-Ann8D3WO.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-9-PBbdk4I8.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-10-BVOZ4J4I.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-11-DfL9ObnV.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/homeworkWeek3/assets/inspiration-12-DuuNx5Rt.png" class="outfit-img" alt="inspiration-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -231,7 +320,8 @@
         <p class="mb-4">Copyright ©2025 URBNSTYLE</p>
         <p>All Rights Reserved.</p>
     </div>
-</footer>
+</footer>            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+             
 </body>
 
 </html>

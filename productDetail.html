@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>產品詳情頁</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script type="module" crossorigin src="/homeworkWeek3/assets/main-D1YjR4jq.js"></script>
-  <link rel="stylesheet" crossorigin href="/homeworkWeek3/assets/main-DPsC72JH.css">
+  <script type="module" crossorigin src="/homeworkWeek3/assets/main-jVNXAcAK.js"></script>
+  <link rel="stylesheet" crossorigin href="/homeworkWeek3/assets/main-CDhi58JO.css">
 </head>
 
 <body>
@@ -55,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="col-5 p-0">
+        <div class="col-5">
           <div class="product-right">
             <ol class="breadcrumb-list mb-12">
               <li><a href="index.html" class="pageActive">首頁</a></li>
@@ -172,6 +171,7 @@
           </div>
         </div>
       </section>
+      <!--RWD輪播-->
       <section class="maylike d-none">
         <h4 class="maylike-text mt-48 mb-16">你可能也喜歡...</h4>
         <div class="swiper like-list">
@@ -217,6 +217,19 @@
         <p>All Rights Reserved.</p>
     </div>
 </footer>      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1.2,
+            spaceBetween: 16,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true
+            }
+          });
+        });
+      </script>
 </body>
 
 </html>
