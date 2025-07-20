@@ -8,9 +8,14 @@
     align-items: center;
 }
 
+.responsive-br {
+    display: none;
+}
+
 .collect-item {
     display: flex;
     border-bottom: 1px solid $text-color-300;
+
     h3 {
         font-size: 20px;
         font-weight: 700;
@@ -18,7 +23,7 @@
     }
 }
 
-.collect-img img{
+.collect-img img {
     width: 120px;
     height: 120px;
 }
@@ -34,13 +39,60 @@
 }
 
 .collect-btn {
-  color: $text-color-000;
-  background-color: $text-color-900;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 4px;
-  display: block; /* 讓它變成可用 margin 自動置中 */
-  width: fit-content; /* 保持內容寬度 */
-  margin: 32px auto 0 auto; /* mt-32 等於 margin-top: 32px; 其他自動置中 */
+    color: $text-color-000;
+    background-color: $text-color-900;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    display: block;
+    /* 讓它變成可用 margin 自動置中 */
+    width: fit-content;
+    /* 保持內容寬度 */
+    margin: 32px auto 0 auto;
+    /* mt-32 等於 margin-top: 32px; 其他自動置中 */
 }
 
+/*collect*/
+@media(max-width:768px) {
+    .container .col-6 {
+        width: 100%;
+        padding: 0px;
+        margin: 24px 0px;
+
+        .collect-title {
+            font-size: 24px;
+
+            &.mb-32 {
+                margin-bottom: 24px;
+            }
+
+            .check {
+                font-size: 20px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .responsive-br {
+        display: inline;
+    }
+
+    .collect-item {
+        h3 {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .collect-price {
+            color: $text-color-900;
+            text-align: left;
+        }
+    }
+
+    .collect-btn.mt-32 {
+        margin-top: 24px;
+    }
+}
