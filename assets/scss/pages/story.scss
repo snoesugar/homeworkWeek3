@@ -92,13 +92,17 @@
 
     }
 
+    .border-gray.pb-48 {
+        padding-bottom: 32px;
+    }
+
     .introduction,
     .history,
     .concept,
     .short-story {
         width: 100%;
-        padding-bottom: 32px;
-        margin-bottom: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 0px;
     }
 
     .introduction-title {
