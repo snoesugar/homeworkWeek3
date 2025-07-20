@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>收藏頁</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="container">
+            <div class="row my-64">
+                <picture class="login-img">
+                    <source srcset="/assets/images/login-sm.png" media="(max-width: 768px)">
+                    <img src="/assets/images/login.png" alt="login">
+                </picture>
+                <div class="col-7">
+                    <div class="login-bg">
+                        <h1 class="mb-32">歡迎！</h1>
+                        <div class="login-btn mb-32">
+                            <a href="login.html">登入</a>
+                            <a href="register.html" class="login-active">註冊</a>
+                        </div>
+                        <div class="community">
+                            <div class="community-item mb-8">
+                                <a href="#" class="community-item-btn">
+                                    <img src="/assets/images/facebook.svg" class="mr-12" alt="facebook">
+                                    <p>Facebook 註冊</p>
+                                </a>
+                            </div>
+                            <div class="community-item mb-8">
+                                <a href="#" class="community-item-btn">
+                                    <img src="/assets/images/apple.svg" class="mr-12" alt="apple">
+                                    <p>Apple 註冊</p>
+                                </a>
+                            </div>
+                            <div class="community-item">
+                                <a href="#" class="community-item-btn">
+                                    <img src="/assets/images/google.svg" class="mr-12" alt="Google">
+                                    <p>Google 註冊</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footerNo'); -%>
+            <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>
