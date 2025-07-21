@@ -20,10 +20,11 @@
                     <div class="login-bg">
                         <h1 class="mb-32">歡迎！</h1>
                         <div class="login-btn mb-32">
-                            <a href="login.html" class="login-active">登入</a>
-                            <a href="register.html">註冊</a>
+                            <a href="#" id="loginTab" class="login-active">登入</a>
+                            <a href="#" id="registerTab">註冊</a>
                         </div>
-                        <div class="community">
+                        <!-- 登入 -->
+                        <div id="loginForm" class="community">
                             <div class="community-item mb-8">
                                 <a href="#" class="community-item-btn">
                                     <img src="/assets/images/facebook.svg" class="mr-12" alt="facebook">
@@ -43,6 +44,27 @@
                                 </a>
                             </div>
                         </div>
+                        <!-- 註冊 -->
+                         <div id="registerForm" class="community d-none">
+                            <div class="community-item mb-8">
+                                <a href="#" class="community-item-btn">
+                                    <img src="/assets/images/facebook.svg" class="mr-12" alt="facebook">
+                                    <p>Facebook 註冊</p>
+                                </a>
+                            </div>
+                            <div class="community-item mb-8">
+                                <a href="#" class="community-item-btn">
+                                    <img src="/assets/images/apple.svg" class="mr-12" alt="apple">
+                                    <p>Apple 註冊</p>
+                                </a>
+                            </div>
+                            <div class="community-item">
+                                <a href="#" class="community-item-btn">
+                                    <img src="/assets/images/google.svg" class="mr-12" alt="Google">
+                                    <p>Google 註冊</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,6 +73,29 @@
         <%- include('./layout/footerNo'); -%>
             <script type="module" src="../main.js"></script>
 
+
+            <script>
+                const loginTab = document.getElementById('loginTab');
+                const registerTab = document.getElementById('registerTab');
+                const loginForm = document.getElementById('loginForm');
+                const registerForm = document.getElementById('registerForm');
+
+                loginTab.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    loginTab.classList.add('login-active');
+                    registerTab.classList.remove('login-active');
+                    loginForm.style.display = 'block';
+                    registerForm.style.display = 'none';
+                });
+
+                registerTab.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    registerTab.classList.add('login-active');
+                    loginTab.classList.remove('login-active');
+                    loginForm.style.display = 'none';
+                    registerForm.style.display = 'block';
+                });
+            </script>
 </body>
 
 </html>
