@@ -32,21 +32,3 @@
 .memberBtn {
   padding: 15px;
 }
-
-.memberBtn img {
-  width: 18px;
-  height: 18px;
-}
-
-/*響應式*/
-@media(max-width:768px) {
-  .header {
-    padding: 9px 0px;
-  }
-
-  .headerList a:not(.logo) {
-    display: none;
-  }
-
-
-}

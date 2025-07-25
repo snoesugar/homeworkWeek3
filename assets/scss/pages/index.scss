@@ -36,6 +36,7 @@
 
     .newArrival-item img {
         width: 100%;
+        object-fit: cover
     }
 }
 
@@ -151,6 +152,7 @@
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover
 }
 
 .img-overlay {
@@ -205,4 +207,5 @@
 .outfit-img {
     display: block;
     width: 100%;
+    object-fit: cover
 }

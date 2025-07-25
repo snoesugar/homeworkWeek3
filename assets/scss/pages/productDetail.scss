@@ -20,6 +20,7 @@
 .product-img img {
     display: block;
     width: 100%;
+    object-fit: cover
 }
 
 .price {
@@ -38,6 +39,7 @@
     width: 64px;
     height: 64px;
     border: 1px solid transparent;
+    object-fit: cover
 }
 
 .color a:hover img,
