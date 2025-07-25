@@ -4,7 +4,6 @@
 
 /*utils*/
 @import './utils/helpers';
-@import './utils/mixins';
 @import './utils/variables';
 @import './utils/fontStyle';
 
@@ -25,3 +24,6 @@
 @import './pages/story.scss';
 @import './pages/collect.scss';
 @import './pages/login.scss';
+
+/*utils響應式*/
+@import './utils/mixins';

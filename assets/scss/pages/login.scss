@@ -63,31 +63,3 @@
         color: $text-color-900;
     }
 }
-
-/*login*/
-@media(max-width:768px) {
-    .row.my-64 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .login-img {
-        width: 100%;
-        height: auto;
-        /* 高度自動調整 */
-        border-radius: 0px;
-    }
-
-    .col-7 {
-        width: 100%;
-
-        .login-bg {
-            background-image: none;
-            padding: 32px 0px;
-
-            h1 {
-                font-size: 24px;
-            }
-        }
-    }
-}
