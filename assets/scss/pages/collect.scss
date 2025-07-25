@@ -50,6 +50,9 @@
     /* 保持內容寬度 */
     margin: 32px auto 0 auto;
     /* mt-32 等於 margin-top: 32px; 其他自動置中 */
+    &:hover {
+        background-color: $text-color-700;
+    }
 }
 
 /*collect*/
