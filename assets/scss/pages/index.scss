@@ -13,6 +13,9 @@
     background-color: $primary-color-300;
     border-radius: 4px;
     text-decoration: none;
+    &:hover {
+        color: $primary-color-500;
+    }
 }
 
 .newArrival {
@@ -22,17 +25,18 @@
 .newArrival-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 24px;
     margin-left: -12px;
     margin-right: -12px;
-}
 
-.newArrival-item {
-    width: calc(50% - 24px);
-}
+    .newArrival-item {
+        width: calc(50% - 12px);
+    }
 
-.newArrival-item img {
-    width: 100%;
+    .newArrival-item img {
+        width: 100%;
+    }
 }
 
 .hot-sale {
@@ -47,6 +51,15 @@
 
 .hotsale-img {
     position: relative;
+    
+    a {
+    display: block;
+    transition: all 0.3s ease;
+    }
+}
+
+.hotsale-img a:hover {
+    box-shadow: 0 4px 12px rgba(57, 59, 59, 0.4);
 }
 
 .number-1 {
@@ -77,6 +90,9 @@
     padding: 12px 0px;
     border-radius: 4px;
     margin: 0 auto;
+    &:hover {
+        color: $primary-color-500;
+    }
 }
 
 .star-p {
@@ -113,6 +129,14 @@
     width: 100%;
 }
 
+.shop-series .row .col-3 a {
+    display: block;
+    transition: all 0.3s ease;
+    
+    &:hover {
+    box-shadow: 0 4px 12px rgba(57, 59, 59, 0.4);
+    }
+}
 
 .img-mask {
     position: relative;
