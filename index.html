@@ -323,11 +323,10 @@
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     document.querySelectorAll('.swiper').forEach((swiperEl) => {
-                        const slidesCount = swiperEl.querySelectorAll('.swiper-slide').length;
                         const paginationEl = swiperEl.querySelector('.swiper-pagination');
 
                         new Swiper(swiperEl, {
-                            loop: slidesCount >= 5,
+                            loop: false,
                             slidesPerView: 1.2,
                             spaceBetween: 16,
                             ...(paginationEl
