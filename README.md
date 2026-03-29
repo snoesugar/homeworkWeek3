@@ -1,48 +1,41 @@
-# 網頁切版直播班 Vite 範例
+# 👟 URBNSTEP - 城市語境下的街頭機能鞋電商
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v18 以上
-  - 查看自己版本指令：`node -v`
+URBNSTEP 是一個致力於打造「風格與功能並存」的鞋履電商平台。以「Urban + Step」為核心理念，透過高品質的視覺呈現與品牌敘事，捕捉都市生活的節奏，將鞋履從純粹的商品轉化為穿戴者的自我表達。
 
+🔗 **[點此線上預覽成品](https://snoesugar.github.io/homeworkWeek3/index.html)**
 
-## 指令列表
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm run deploy` - 自動化部署
+---
 
-## 資料夾結構
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - scss # SCSS 的樣式放置處
+## 🎯 開發動機與品牌理念
 
-  - layout # ejs 模板放置處
-  - pages # 頁面放置處
+開發初衷是為了建立一個能傳遞「城市語言」的數位空間。
+* **品牌敘事**：捕捉都市街角不被刻意編排的時刻，縮短品牌與消費者間的情感距離。
+* **美學堅持**：相信美是由內而外的呼吸，產品目錄設計強調「真實場景」的氛圍感，而非單純的商品陳列。
 
-- JavaScript 程式碼可寫在 main.js 檔案
+---
 
-### 注意事項
-- 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
-- .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
+## 🛠️ 技術重點與工程實踐
 
-## 開發模式的監聽
-vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
+本專案展現了在開發初期即具備的**系統化思維**與**對 UI 細節的極致追求**：
 
+### 1. 模組化開發架構 (EJS)
+* **組件封裝**：運用 **EJS (Embedded JavaScript templates)** 實作組件化開發，將 Navbar、Footer 等重複性元素進行模組化引入。
+* **開發效率優化**：透過 EJS 達成「一處修改，全站更新」，大幅降低維護成本並確保頁面間的一致性。
 
-## 部署 gh-pages 流程說明
-### Windows 版本
-1. 在 GitHub 建立一個新的 Repository
+### 2. 進階樣式架構管理 (SASS/SCSS)
+* **7-1 Pattern**：導入嚴謹的 SCSS 7-1 資料夾結構，確保 CSS 程式碼在大型專案中依然清晰且具備高度擴充性。
+* **像素級精確切版 (Pixel-perfect)**：挑戰將設計稿細節完美還原，展現對網頁佈局（Grid & Flexbox）的深厚操控力。
 
-2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
-```cmd
-git init # 若已經初始化過就可以不用輸入
-git add .
-git commit -m 'first commit'
-git branch -M main
-git remote add origin [GitHub Repositories Url]
-git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
-```
+### 3. 使用者體驗與導航 (UX & Interaction)
+* **收藏功能 (Like System)**：實作愛心點擊收藏功能，模擬電商平台的使用者留存互動邏輯。
+* **麵包屑導航 (Breadcrumb)**：整合 Bootstrap 的導航元件，優化產品目錄的檢索路徑，提升 SEO 友善度。
+* **高質感 RWD**：基於 Bootstrap 5 進行深度開發，確保在行動端也能呈現如雜誌般的高質感視覺排版。
 
-3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+---
+
+## 🚀 技術棧 (Tech Stack)
+
+* **Core:** HTML5, JavaScript (ES6+)
+* **Template Engine:** EJS
+* **Styling:** SASS/SCSS (7-1 Pattern), Bootstrap 5
+* **Build Tool:** Vite / Gulp
