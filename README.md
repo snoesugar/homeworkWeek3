@@ -2,7 +2,7 @@
 
 URBNSTEP 是一個致力於打造「風格與功能並存」的鞋履電商平台。以「Urban + Step」為核心理念，透過高品質的視覺呈現與品牌敘事，捕捉都市生活的節奏，將鞋履從純粹的商品轉化為穿戴者的自我表達。
 
-🔗 **[點此線上預覽成品](https://snoesugar.github.io/homeworkWeek3/index.html)**
+🔗 **[點此線上預覽成品](https://snoesugar.github.io/URBNSTEP/index.html)**
 
 ---
 
